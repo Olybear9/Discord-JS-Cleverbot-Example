@@ -2,17 +2,22 @@
 const Discord = require('discord.js')
 const client = new Discord.Client();
 
+// Settings
+var id = "Your bot ID here"
+var clkey = "Cleverbot API key here"
+var token = "Bot token here"
+
 // Cleverbot setup:
 const Cleverbot = require("cleverbot-node");
 const clbot = new Cleverbot;
-clbot.configure({botapi: "YOUR API KEY HERE, CHECK README.MD"});
+clbot.configure({botapi: clkey});
 
 /*
 This will make the bot reply when it gets mentioned.
 (Thanks to GeopJr for the `message.content.includes` part!)
 */
 client.on("message", (message) => {
-  if (message.content.includes("<@REPLACE WITH YOUR BOT ID>")) {
+  if (message.content.includes(id)) {
     clbot.write(message.content, (response) => {
       message.channel.startTyping();
       setTimeout(() => {
@@ -24,4 +29,4 @@ client.on("message", (message) => {
 })
 
 /* Make the application able to login to your bot. */1
-client.login('YOUR BOT TOKEN');
+client.login(token);
