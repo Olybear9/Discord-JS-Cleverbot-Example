@@ -1,7 +1,7 @@
 # Discord-JS-Cleverbot-Example
 Description: "Using Cleverbot API (https://www.cleverbot.com/api/) to make a discord bot that responds to mentions using Discord-JS!"
 
-
+IMPORTANT MESSAGE: Cleverbot.com recently shut down their free api, you now need to buy for 10 dollars.
 
 Check the node JS file node.js for an example of how you can use the API to get your discord bot able to respond to mentions as a human I guess.
 
