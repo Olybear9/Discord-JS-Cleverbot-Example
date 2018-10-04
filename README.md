@@ -12,6 +12,10 @@ Check the node JS file node.js for an example of how you can use the API to get 
  - This is just not nice, the user can spam the bot and get you out of API requests. Adding cooldown soon as possible.
  
  
+ --> Requirements:
+   - Basic knowledge is good.
+   - Nodejs &  npm installed.
+   - Text editor & host for the bot.
  
  
  --> How to:
@@ -23,4 +27,9 @@ Check the node JS file node.js for an example of how you can use the API to get 
    - Now you need an API key from https://www.cleverbot.com/api/ in order to do that create an account on that sit. Then copy your 'API key' then put it in the node.js file. It is limited to an x amount of request when you're out of API requests you can buy them or create a new account but that won't support the developers that's up to you.
    
  * For Windows: 
-    - SOON!
+    - After installing both nodejs and npm you can go to the next step.
+    - Make a folder in your documents, desktop or any location it doesn't matter.
+    - Download the node.js file and put it in the folder.
+    - Open the npm console and look for the file location and do `cd [file location to folder here]` to go to the right folde.r
+    - Then install discord.js by executing `npm install discord.js` and wait for it. After that's done do: `npm install cleverbot-node` and you're done for the installation part.
+    - Now you need an API key from https://www.cleverbot.com/api/ in order to do that create an account on that sit. Then copy your 'API key' then put it in the node.js file. It is limited to an x amount of request when you're out of API requests you can buy them or create a new account but that won't support the developers that's up to you.
