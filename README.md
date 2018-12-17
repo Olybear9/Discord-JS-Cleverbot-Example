@@ -8,7 +8,7 @@ Check the node JS file node.js for an example of how you can use the API to get 
 
 --> Known bugs:
  - Spams users when you PM the bot and waste all free API requests from https://www.cleverbot.com/api/ (check how to)!
- - (FIXED, https://github.com/Y3cy/Discord-JS-Cleverbot-Example/issues/1) This isn't really a bug, but you HAVE to mention the bot at first, looking for a way to just make it like if it has @BOTNAME#0001 in the message. Or make it toggleable. As said not really a bug but a thing we'll have to work on.
+ - (FIXED, https://github.com/Feelingly/Discord-JS-Cleverbot-Example/issues/1) This isn't really a bug, but you HAVE to mention the bot at first, looking for a way to just make it like if it has @BOTNAME#0001 in the message. Or make it toggleable. As said not really a bug but a thing we'll have to work on.
  - This is just not nice, the user can spam the bot and get you out of API requests. Adding cooldown soon as possible.
  
  
