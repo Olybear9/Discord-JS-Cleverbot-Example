@@ -28,5 +28,22 @@ client.on("message", (message) => {
   }
 })
 
-/* Make the application able to login to your bot. */1
+/*
+As example, you have a channel named #ai.
+Well, have a chat with the bot in there. No tagging.
+*/
+client.on("message", async function (message) {
+	if(message.author.id == config.bot_id) return;
+    if(message.channel.name == "ai"){
+	    clbot.write(message.content, (response) => {
+	      message.channel.startTyping();
+	      setTimeout(() => {
+	        message.channel.send(response.output).catch(console.error);
+	        message.channel.stopTyping();
+	      }, Math.random() * (1 - 3) + 1 * 1000);
+	    });
+    }
+});
+
+/* Make the application able to login to your bot. */
 client.login(token);
